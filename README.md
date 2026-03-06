@@ -1,6 +1,5 @@
 # OpenSignup Board
-
-A lightweight PHP signup board that stores schedule data in JSON.
+A simple self-hosted signup board for tasks, events and volunteer slots with reserve lists.
 
 ## Default credentials
 
