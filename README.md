@@ -2,7 +2,10 @@
 
 A simple self-hosted signup board for tasks, events and volunteer slots.
 
-Users can register for available slots, and once the limit is reached additional users are placed on a reserve list automatically.
+SignupBoard allows users to register for limited slots.
+Once the defined number of slots is filled, additional users are automatically placed on a reserve list.
+
+The application is lightweight and uses JSON files instead of a database, making it easy to deploy on almost any PHP webserver.
 
 ## Features
 
@@ -19,8 +22,9 @@ Users can register for available slots, and once the limit is reached additional
 # Screenshots
 
 ## User Interface
-
-![SignupBoard Frontend](frontendUI.png)
+<p align="center">
+  <img src="frontendUI.png" width="30%">
+</p>
 
 Users can sign up for available slots.  
 If all slots are filled, additional users are placed automatically in the reserve list.
@@ -29,7 +33,9 @@ If all slots are filled, additional users are placed automatically in the reserv
 
 ## Admin Panel
 
-![SignupBoard Admin](adminUI.png)
+<p align="center">
+  <img src="adminUI.png" width="30%">
+</p>
 
 Admins can:
 
