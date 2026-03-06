@@ -1,9 +1,0 @@
-{
-  "name": "deinname/signup-board",
-  "description": "A simple self-hosted signup board for tasks, events and volunteer slots.",
-  "type": "project",
-  "require": {},
-  "scripts": {
-    "lint": "php -l index.php && php -l admin.php && php -l helpers.php && php -l save.php && php -l remove.php && php -l export.php && php -l api.php && php -l config.php"
-  }
-}
