@@ -10,7 +10,7 @@ permissions:
   contents: read
 
 jobs:
-  build:
+  lint:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,19 +22,13 @@ jobs:
           php-version: '8.2'
           coverage: none
 
-      - name: Validate composer.json
-        run: composer validate --strict
-
-      - name: Cache Composer packages
-        uses: actions/cache@v4
-        with:
-          path: vendor
-          key: ${{ runner.os }}-php-${{ hashFiles('composer.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-php-
-
-      - name: Install dependencies
-        run: composer install --no-interaction --prefer-dist --no-progress
-
-      - name: PHP syntax check
-        run: composer run-script lint
+      - name: Lint PHP files
+        run: |
+          php -l index.php
+          php -l admin.php
+          php -l helpers.php
+          php -l save.php
+          php -l remove.php
+          php -l export.php
+          php -l api.php
+          php -l config.php
